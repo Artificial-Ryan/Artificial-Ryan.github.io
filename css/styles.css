@@ -62,6 +62,17 @@ header #branding h1 {
   margin: 0;
 }
 
+header #branding img {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header #branding {
+  display: flex;
+  align-items: center;
+}
+
 /* Showcase */
 #showcase {
   min-height: 400px;
