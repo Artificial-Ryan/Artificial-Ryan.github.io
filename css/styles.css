@@ -8,8 +8,8 @@ body, h1, h2, h3, p, ul, li {
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
 }
 
 .container {
@@ -20,11 +20,11 @@ body {
 
 /* Basic Styling */
 header {
-  background: #333;
+  background: #212121; /* Dark header background */
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: 3px solid #e8491d;
+  border-bottom: 3px solid #673ab7; /* Purple accent */
 }
 
 header a {
@@ -96,6 +96,6 @@ footer {
   padding: 20px;
   margin-top: 20px;
   color: #fff;
-  background-color: #e8491d;
+  background-color: #673ab7; /* Purple footer */
   text-align: center;
 }
