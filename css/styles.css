@@ -60,7 +60,7 @@ header nav {
 /* Showcase */
 #showcase {
   min-height: 400px;
-  background: url('../images/showcase.jpg') no-repeat 0 -400px;
+  background: url('https://via.placeholder.com/800x400') no-repeat center center/cover;
   text-align: center;
   color: #fff;
 }
