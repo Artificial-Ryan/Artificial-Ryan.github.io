@@ -19,11 +19,12 @@ body {
 }
 
 /* Basic Styling */
+/* Header Styles */
 header {
-  background: #212121; /* Dark header background */
+  background: #212121;
   color: #fff;
-  padding: 20px 0;
-  border-bottom: 3px solid #673ab7; /* Purple accent */
+  padding: 1em 0;
+  border-bottom: 0.2em solid #673ab7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,28 +33,33 @@ header {
 header a {
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #673ab7;
 }
 
 header ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  align-items: center;
 }
 
 header li {
-  padding: 0 15px;
-}
-
-header #branding h1 {
-  margin: 0;
-  font-size: 24px;
+  margin: 0 1em;
 }
 
 header nav {
-  margin-top: 0;
+  display: flex;
+}
+
+header #branding h1 {
+  font-size: 1.5em;
+  margin: 0;
 }
 
 /* Showcase */
@@ -98,57 +104,66 @@ header nav {
   height: auto;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-  padding: 20px;
-  margin-top: 20px;
+  background-color: #222;
   color: #fff;
-  background-color: #673ab7;
   text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* About Page Styles */
 #bio {
-  padding: 20px;
+  padding: 2em;
+  display: flex;
+  align-items: center;
 }
 
 #bio img {
-  width: 150px;
+  width: 10em;
   border-radius: 50%;
-  float: left;
-  margin-right: 20px;
+  margin-right: 2em;
 }
 
 #bio h2 {
-  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
 #skills {
-  padding: 20px;
+  padding: 2em;
 }
 
 #skills .skill-group {
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 
 #skills .skill-group h3 {
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 #skills .skill-group ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #skills .skill-group li {
-  display: inline;
-  margin-right: 10px;
+  margin: 0 1em 0.5em 0;
+  padding: 0.5em 1em;
+  background-color: #333;
+  border-radius: 0.3em;
 }
 
 #etsy {
-  padding: 20px;
+  padding: 2em;
 }
 
 #contact {
-  padding: 20px;
+  padding: 2em;
 }
