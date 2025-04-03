@@ -55,6 +55,10 @@ header #branding h1 {
   margin: 0;
 }
 
+header #branding img {
+  width: 100px;
+}
+
 header nav {
   float: right;
   margin-top: 10px;
