@@ -1,0 +1,27 @@
+export function renderFooter() {
+  return `
+  <footer>
+    <p>Artificial Ryan, Copyright &copy; 2025</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://n8n.artificialryan.online/webhook/1c01cfef-7c1c-4b02-9f5c-246728336850/chat',
+      style: {
+        background: '#121212',
+        text: '#e0e0e0',
+        primary: '#00bcd4',
+        secondary: '#009688',
+        inputBackground: '#1e1e1e',
+        inputBorder: '#37474f',
+        inputPlaceholder: '#9e9e9e',
+      },
+      title: 'Artificial Ryan Chat',
+      welcomeMessage: 'Welcome to the Artificial Ryan chat. Prepare for wit, sarcasm, and possibly existential dread. 😉',
+    });
+  </script>
+  `;
+}
