@@ -179,3 +179,12 @@ footer {
     width: 70px;
   }
 }
+
+/* Etsy Embed Styles */
+#etsy-embed {
+  padding: 2em;
+}
+
+#etsy-embed .container {
+  text-align: center;
+}
