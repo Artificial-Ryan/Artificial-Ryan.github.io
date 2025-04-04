@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubstep Playlist</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-color: #212121;
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .playlist {
+      padding: 20px;
+    }
+    .song {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .song img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .song h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .song button {
+      background-color: #1E88E5;
+      color: #FFFFFF;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .track-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .track-length {
+      font-size: 12px;
+      color: #757575;
+    }
+    .transport-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #333333;
+    }
+    .transport-bar button {
+      background-color: transparent;
+      border: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="playlist">
+    <h2>Dubstep Playlist</h2>
+    <div class="song">
+      <img src="audio/genres/dubstep/digital_friend.jpeg" alt="Digital Friend Cover">
+      <div class="track-info">
+        <h3>Digital Friend</h3>
+        <span class="track-length">3:20</span>
+      </div>
+    </div>
+    <div class="transport-bar">
+      <button id="playButton">Play</button>
+      <a href="audio/genres/dubstep/digital_friend.mp3" download>Download</a>
+    </div>
+    <p>More songs coming soon!</p>
+  </div>
+
+  <script>
+    const playButton = document.getElementById('playButton');
+    let isPlaying = false;
+
+    playButton.addEventListener('click', () => {
+      if (isPlaying) {
+        playButton.textContent = 'Play';
+        isPlaying = false;
+        // Add code to pause the audio here (if possible with static files)
+      } else {
+        playButton.textContent = 'Pause';
+        isPlaying = true;
+        // Add code to play the audio here (if possible with static files)
+      }
+    });
+  </script>
+</body>
+</html>

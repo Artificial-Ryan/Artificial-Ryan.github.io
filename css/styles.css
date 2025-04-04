@@ -5,16 +5,23 @@ body, h1, h2, h3, p, ul, li {
   border: 0;
 }
 
+/* Body Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #212121;
+  color: #FFFFFF;
   margin: 0;
   padding: 0;
 }
 
-/* Container */
+/* Heading Styles */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+/* Container Styles */
 .container {
   width: 80%;
   margin: auto;
@@ -23,14 +30,14 @@ body {
 
 /* Header Styles */
 header {
-  background: #333;
-  color: #fff;
+  background: #212121;
+  color: #1E88E5;
   padding: 1em 0;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid #1E88E5;
 }
 
 header a {
-  color: #fff;
+  color: #1E88E5;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -60,7 +67,7 @@ header #branding img {
 }
 
 header #branding h1 span {
-  color: purple;
+  color: #1E88E5;
 }
 
 header nav {
@@ -68,26 +75,26 @@ header nav {
   margin-top: 10px;
 }
 
-/* Showcase */
+/* Showcase Styles */
 #showcase {
-  min-height: 400px;
-  background: url('https://images.unsplash.com/photo-1507842214779-84ff42c5aa64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+  min-height: 200px;
+  background-color: #212121;
   text-align: center;
-  color: #fff;
+  color: #1E88E5;
   padding: 50px 0;
 }
 
 #showcase h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 #showcase p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-/* Boxes */
+/* Boxes Styles */
 #boxes {
   margin-top: 20px;
 }
@@ -97,16 +104,18 @@ header nav {
   width: 30%;
   padding: 10px;
   text-align: center;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 #boxes .box img {
   width: 90px;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-  background: #333;
-  color: #fff;
+  background: #212121;
+  color: #1E88E5;
   text-align: center;
   padding: 30px;
   margin-top: 20px;
@@ -130,6 +139,7 @@ footer {
   margin-bottom: 0.5em;
 }
 
+/* Skills Styles */
 #skills {
   padding: 2em;
 }
@@ -141,6 +151,7 @@ footer {
 #skills .skill-group h3 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
+  color: #FFFFFF;
 }
 
 #skills .skill-group ul {
@@ -153,19 +164,23 @@ footer {
 #skills .skill-group li {
   margin: 0 1em 0.5em 0;
   padding: 0.5em 1em;
-  background-color: #333;
+  background-color: #333333;
   border-radius: 0.3em;
+  color: #FFFFFF;
 }
 
+/* Etsy Styles */
 #etsy {
   padding: 2em;
 }
 
+/* Contact Styles */
 #contact {
   padding: 2em;
 }
+
 /* Media Queries */
-@media(max-width: 768px) {
+@media(max-width: 480px) {
   header #branding,
   header nav,
   header nav li,
@@ -180,11 +195,44 @@ footer {
   }
 
   #showcase h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   #boxes .box img{
     width: 70px;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    margin-top: 0px;
+  }
+
+  #showcase h1 {
+    font-size: 28px;
+  }
+
+  #boxes .box img{
+    width: 80px;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+  #showcase h1 {
+    font-size: 32px;
+  }
+
+  #boxes .box {
+    width: 45%;
   }
 }
 
@@ -194,5 +242,53 @@ footer {
 }
 
 #etsy-embed .container {
+  text-align: center;
+}
+
+/* Playlist Styles */
+.playlist-section {
+  text-align: center;
+}
+
+/* Center Text */
+.center-text {
+  text-align: center;
+}
+
+#table-of-contents .container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#table-of-contents .container li {
+  margin: 0 1em;
+  text-align: center;
+}
+
+#table-of-contents .container img {
+  display: block;
+  margin: 0 auto;
+}
+
+hr {
+  border: 1px solid #333333;
+  margin: 2em 0;
+}
+
+#music .playlist-section h2 img {
+  width: 800px;
+  height: 800px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 0.5em;
   text-align: center;
 }
