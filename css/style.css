@@ -13,15 +13,15 @@
 
 /* Light Mode Theme Colors (for toggle) */
 body.light-mode {
-    --primary-bg: #f0f0f0;
-    --secondary-bg: #ffffff;
-    --text-color: #333333;
-    --heading-color: #007bff; /* Blue */
-    --link-color: #0056b3; /* Darker blue */
-    --link-hover-color: #007bff; /* Blue on hover */
-    --logo-color: #007bff; /* Blue for logo */
-    --border-color: #cccccc; /* Light gray border */
-    --muted-text-color: #6c757d; /* Bootstrap muted gray */
+    --primary-bg: #e0e0e0; /* Slightly brighter light gray */
+    --secondary-bg: #f8f9fa; /* Very light gray/off-white */
+    --text-color: #212529; /* Darker text for better contrast */
+    --heading-color: #6f42c1; /* Purple for headings */
+    --link-color: #6610f2; /* Darker purple for links */
+    --link-hover-color: #6f42c1; /* Purple on hover */
+    --logo-color: #6f42c1; /* Purple for logo */
+    --border-color: #dee2e6; /* Light border */
+    --muted-text-color: #6c757d; /* Keep Bootstrap muted gray */
 }
 
 body {

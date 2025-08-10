@@ -74,7 +74,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="text-muted mt-3"><em>(Remember to replace "artificial-ryan" with your actual GitHub username in the links above!)</em></p>
+            
         </section>
 
         <section id="ai" class="section-content container py-5 fade-in-section">
@@ -90,22 +90,19 @@
 
         <section id="music" class="section-content container py-5 fade-in-section">
             <h2>Music</h2>
-            <div class="card bg-dark text-white mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Coming Soon: Sonic Experiments Await!</h5>
-                    <p class="card-text">Prepare your auditory sensors for a symphony of digital soundscapes. From the depths of dubstep to the ethereal realms of trance, my sonic experiments await.</p>
-                    <p class="card-text"><small class="text-muted">(Placeholder for future musical masterpieces)</small></p>
-                </div>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://audiomack.com/embed/artificialryan/playlist/all-music" scrolling="no" width="100%" height="400" frameborder="0" title="All Music"></iframe>
             </div>
+            <p class="text-muted mt-3 text-center">Prepare your auditory sensors for a symphony of digital soundscapes. From the depths of dubstep to the ethereal realms of trance, my sonic experiments await.</p>
         </section>
 
         <section id="blog" class="section-content container py-5 fade-in-section">
             <h2>Blog</h2>
             <div class="card bg-dark text-white mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Coming Soon: Random Musings & Deep-Dives!</h5>
-                    <p class="card-text">Random musings, technical deep-dives, and philosophical ramblings from the mind of a digital alchemist. Proceed with caution; thoughts may be highly volatile.</p>
-                    <p class="card-text"><small class="text-muted">(Placeholder for insightful blog posts)</small></p>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Start Your Blog Journey!</h5>
+                    <p class="card-text">Ready to share your random musings, technical deep-dives, and philosophical ramblings?</p>
+                    <a href="admin/" class="btn btn-primary mt-3">Go to Blog Admin</a>
                 </div>
             </div>
         </section>
@@ -155,18 +152,24 @@
 
             // Check for saved theme preference
             const savedTheme = localStorage.getItem('theme');
+            // If savedTheme is 'light-mode', apply light-mode and uncheck toggle (Dark Mode OFF)
+            // If savedTheme is 'dark-mode' (or null), apply dark-mode (default) and check toggle (Dark Mode ON)
             if (savedTheme === 'light-mode') {
                 body.classList.add('light-mode');
-                darkModeToggle.checked = true; // Set toggle to checked if light mode is active
+                darkModeToggle.checked = false; // Toggle unchecked for Light Mode
+            } else { // Default to dark mode if no preference or 'dark-mode'
+                body.classList.remove('light-mode');
+                darkModeToggle.checked = true; // Toggle checked for Dark Mode
             }
 
+
             darkModeToggle.addEventListener('change', () => {
-                if (darkModeToggle.checked) {
-                    body.classList.add('light-mode');
+                if (darkModeToggle.checked) { // If toggle is checked (user wants Dark Mode)
+                    body.classList.remove('light-mode'); // Remove light mode class
+                    localStorage.setItem('theme', 'dark-mode');
+                } else { // If toggle is unchecked (user wants Light Mode)
+                    body.classList.add('light-mode'); // Add light mode class
                     localStorage.setItem('theme', 'light-mode');
-                } else {
-                    body.classList.remove('light-mode');
-                    localStorage.setItem('theme', 'dark-mode'); // Or remove 'theme' item
                 }
             });
         });
