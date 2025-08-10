@@ -1,11 +1,9 @@
 backend:
   name: github
-  repo: Artificial-Ryan/Artificial-Ryan.github.io # Your GitHub username/repo name
-  branch: main # Branch to publish to
-  base_url: https://github.com # Optional, defaults to https://github.com
-  auth_proxy: https://decap-cms-github-oauth.netlify.app/api/auth # Use Netlify's OAuth proxy for simplicity
-  # Or, if you want to self-host the auth proxy:
-  # auth_type: pkce
+  repo: Artificial-Ryan/Artificial-Ryan.github.io
+  branch: main
+  base_url: https://github.com
+  auth_type: implicit
   app_id: Ov23lif8gYDI3vQ0D2w4 # Your GitHub OAuth Client ID
 
 media_folder: "img/uploads" # Folder where uploaded media will be stored
