@@ -1,53 +1,101 @@
+:root {
+    /* Default (Dark) Theme Colors */
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #1a1a1a;
+    --text-color: #00ff00; /* Neon green */
+    --heading-color: #ff00ff; /* Neon magenta */
+    --link-color: #00ffff; /* Neon cyan */
+    --link-hover-color: #00ff00; /* Neon green on hover */
+    --logo-color: #00ffff; /* Neon cyan for logo */
+    --border-color: #00ff00; /* Neon green border */
+    --muted-text-color: #888; /* Gray for muted text */
+}
+
+/* Light Mode Theme Colors (for toggle) */
+body.light-mode {
+    --primary-bg: #f0f0f0;
+    --secondary-bg: #ffffff;
+    --text-color: #333333;
+    --heading-color: #007bff; /* Blue */
+    --link-color: #0056b3; /* Darker blue */
+    --link-hover-color: #007bff; /* Blue on hover */
+    --logo-color: #007bff; /* Blue for logo */
+    --border-color: #cccccc; /* Light gray border */
+    --muted-text-color: #6c757d; /* Bootstrap muted gray */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0a0a0a; /* Dark background */
-    color: #00ff00; /* Neon green text */
+    background-color: var(--primary-bg);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Custom Logo Styling - Retained */
+/* Custom Logo Styling */
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #00ffff; /* Neon cyan for logo */
+    color: var(--logo-color);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-/* Hero Section Specific Styles - Adjusted */
+/* Hero Section Specific Styles */
 .hero {
-    background-color: #1a1a1a; /* Darker background for hero */
-    color: #00ffff; /* Neon cyan for hero text */
+    background-color: var(--secondary-bg);
+    color: var(--link-color); /* Using link-color for hero text */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #ff00ff; /* Neon magenta for headings */
+    color: var(--heading-color);
 }
 
 .hero p {
     font-size: 1.2rem;
 }
 
-/* Section Content Headings - Retained */
+/* Section Content Headings */
 .section-content h2 {
     font-size: 2.5rem;
-    color: #ff00ff; /* Neon magenta for section headings */
-    border-bottom: 1px solid #00ff00;
+    color: var(--heading-color);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
-/* Section Content Links - Retained */
+/* Section Content Links */
 .section-content a {
-    color: #00ffff;
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .section-content a:hover {
-    color: #00ff00;
+    color: var(--link-hover-color);
+}
+
+/* Fade-in Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card background for dark mode */
+.card.bg-dark {
+    background-color: var(--secondary-bg) !important;
+}
+
+/* Muted text color for dark mode */
+.text-muted {
+    color: var(--muted-text-color) !important;
 }
