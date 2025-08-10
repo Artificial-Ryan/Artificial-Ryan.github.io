@@ -7,21 +7,7 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #1a1a1a;
-    padding: 1rem 0;
-    border-bottom: 2px solid #00ff00; /* Neon green border */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Custom Logo Styling - Retained */
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -30,34 +16,10 @@ nav {
     letter-spacing: 2px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #00ff00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #00ffff; /* Neon cyan on hover */
-}
-
+/* Hero Section Specific Styles - Adjusted */
 .hero {
-    background-color: #1a1a1a;
-    color: #00ffff;
-    text-align: center;
-    padding: 4rem 20px;
-    border-bottom: 2px solid #00ff00;
+    background-color: #1a1a1a; /* Darker background for hero */
+    color: #00ffff; /* Neon cyan for hero text */
 }
 
 .hero h1 {
@@ -70,12 +32,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-.section-content {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-
+/* Section Content Headings - Retained */
 .section-content h2 {
     font-size: 2.5rem;
     color: #ff00ff; /* Neon magenta for section headings */
@@ -84,15 +41,7 @@ nav ul li a:hover {
     margin-bottom: 1.5rem;
 }
 
-.section-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.section-content ul li {
-    margin-bottom: 0.5rem;
-}
-
+/* Section Content Links - Retained */
 .section-content a {
     color: #00ffff;
     text-decoration: none;
@@ -101,14 +50,4 @@ nav ul li a:hover {
 
 .section-content a:hover {
     color: #00ff00;
-}
-
-footer {
-    background-color: #1a1a1a;
-    color: #888;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
-    border-top: 2px solid #00ff00;
-    font-size: 0.9rem;
 }
