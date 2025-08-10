@@ -1,0 +1,13 @@
+# _config.yml
+title: Artificial Ryan's Digital Domain
+description: My personal portfolio website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://artificial-ryan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: Artificial-Ryan
+
+# Build settings
+markdown: kramdown
+theme: minima # A default Jekyll theme, we'll customize later
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
