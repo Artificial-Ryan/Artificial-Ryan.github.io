@@ -5,7 +5,7 @@ date: 2025-08-10 10:00:00 -0400
 categories: [AI, Space, Technology]
 ---
 
-<img src="/blog/assets/images/a_futuristic__sleek__1754843803311_5128.png" alt="AI Medical Assistant in Space" width="600" style="float: right; margin: 0 0 10px 10px;">
+<img src="/blog/assets/images/ai-space-medical-assistant.png" alt="AI Medical Assistant in Space" width="600" style="float: right; margin: 0 0 10px 10px;">
 
 ### Beyond Earth: How AI is Revolutionizing Space Exploration and Human Health in the Cosmos
 
