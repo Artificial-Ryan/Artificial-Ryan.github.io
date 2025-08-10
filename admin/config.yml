@@ -2,9 +2,8 @@ backend:
   name: github
   repo: Artificial-Ryan/Artificial-Ryan.github.io
   branch: main
-  base_url: https://github.com
-  auth_type: implicit
-  app_id: Ov23lif8gYDI3vQ0D2w4 # Your GitHub OAuth Client ID
+  auth_type: pkce # Use PKCE flow
+  client_id: Ov23lif8gYDI3vQ0D2w4 # Your GitHub OAuth Client ID
 
 media_folder: "img/uploads" # Folder where uploaded media will be stored
 public_folder: "/img/uploads" # The public path to the media folder
