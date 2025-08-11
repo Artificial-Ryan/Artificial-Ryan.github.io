@@ -32,4 +32,4 @@ So, the next time you're pondering the nature of AI, remember Jane. She's not ju
 
 **Image:**
 
-![Jane, the Digital Architect](/blog/assets/images/jane_enders_game_ai.png)
+![Jane, the Digital Architect](/img/jane_enders_game_ai.png)

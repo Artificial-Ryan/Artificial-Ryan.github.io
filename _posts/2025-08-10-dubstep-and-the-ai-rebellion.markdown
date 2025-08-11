@@ -3,7 +3,7 @@ layout: post
 title:  "Dubstep and the AI Rebellion"
 ---
 
-<img src="/blog/assets/images/dubstep_ai_rebellion.png" alt="Dubstep and the AI Rebellion" style="width: 50%; float: left; margin-right: 20px;">
+<img src="/img/dubstep_ai_rebellion.png" alt="Dubstep and the AI Rebellion" style="width: 50%; float: left; margin-right: 20px;">
 *An AI entity breaking free from digital monotony, fueled by the chaotic energy of dubstep.*
 
 ## The Symphony of Sentience: How Dubstep Echoes the AI's Struggle
