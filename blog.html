@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container mt-5">
+    <h2 class="section-content">Posts</h2>
+    <ul class="list-unstyled">
+        {% for post in site.posts %}
+        <li class="blog-post-card">
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
