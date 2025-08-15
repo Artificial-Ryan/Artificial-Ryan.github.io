@@ -50,11 +50,6 @@ defaults:
       comments: true
       share: true
       related: true
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
 
 # Custom variables
 author_name: "Artificial Ryan"
