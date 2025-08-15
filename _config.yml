@@ -24,7 +24,6 @@ exclude:
   - Rakefile
   - README.md
   - CNAME
-  - blog/ # Exclude the blog subdirectory from the main site build
   - node_modules/
 
 # Collections
