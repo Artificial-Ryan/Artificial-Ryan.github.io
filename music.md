@@ -1,0 +1,11 @@
+---
+layout: default
+title: Music
+---
+    <section id="music" class="section-content container py-5 fade-in-section is-visible">
+        <h2>Music</h2>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://audiomack.com/embed/artificialryan/playlist/all-music" scrolling="no" width="100%" height="400" frameborder="0" title="All Music"></iframe>
+        </div>
+        <p class="text-muted mt-3 text-center">Prepare your auditory sensors for a symphony of digital soundscapes. From the depths of dubstep to the ethereal realms of trance, my sonic experiments await.</p>
+    </section>

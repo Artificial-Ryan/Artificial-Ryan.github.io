@@ -1,0 +1,19 @@
+---
+layout: default
+title: AI Projects
+---
+    <section id="ai" class="section-content container py-5 fade-in-section is-visible">
+        <h2>AI Projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Dream Weaver</h5>
+                        <p class="card-text">An AI-powered web application that transforms high-level concepts into detailed Stable Diffusion prompts using the Gemini API, generating stunning image galleries.</p>
+                        <a href="https://github.com/Artificial-Ryan/Dream-Weaver" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- You can add more AI projects here -->
+        </div>
+    </section>
