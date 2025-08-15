@@ -64,7 +64,7 @@ social_links:
 header_pages:
   - about.markdown
   - projects.markdown
-  - blog.markdown
+  - blog/blog.markdown
 
 # Footer (optional)
 footer_links:
