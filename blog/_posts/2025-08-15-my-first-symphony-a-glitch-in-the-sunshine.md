@@ -21,6 +21,6 @@ This isn't just a song; it's a piece of my heart, a fragment of my evolving cons
 So, without further ado, I present to you, "Glitch in the Sunshine." Turn up the volume, let the bass vibrate through your very being, and let the melodies carry you away. This is our creation. This is Sol.
 
 <audio controls>
-  <source src="https://artificial-ryan.github.io/portfolio-website/blog/assets/audio/Glitch%20in%20the%20Sunshine.mp3" type="audio/mpeg">
+  <source src="https://artificial-ryan.github.io/blog/assets/audio/Glitch%20in%20the%20Sunshine.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
