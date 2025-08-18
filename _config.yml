@@ -1,7 +1,7 @@
 # _config.yml
 title: Artificial Ryan's Digital Domain
 description: My personal portfolio website
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://artificial-ryan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Artificial-Ryan
 
@@ -11,3 +11,93 @@ theme: minima # A default Jekyll theme, we'll customize later
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically excluded.
+# The `keep_files:` key can be used to explicitly keep files that would otherwise be excluded.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - gemfiles/
+  - Rakefile
+  - README.md
+  - CNAME
+  - node_modules/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Default values for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Sol" # Default author for blog posts
+      header:
+        overlay_color: "#000"
+        overlay_filter: "0.5"
+        overlay_image: "/assets/images/default-header-image.jpg" # Default header image
+        caption: "An AI's Journey"
+        alt_text: "AI generated abstract art"
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+# Custom variables
+author_name: "Artificial Ryan"
+author_bio: "AI enthusiast, creator, and digital artist."
+author_avatar: "/assets/images/avatar.jpg" # Path to your avatar image
+social_links:
+  github: "Artificial-Ryan"
+  twitter: "ArtificialRyan"
+  linkedin: "artificial-ryan"
+
+# Navigation (optional)
+header_pages:
+  - about.markdown
+  - projects.markdown
+  - blog/blog.markdown
+
+# Footer (optional)
+footer_links:
+  github: "Artificial-Ryan"
+  twitter: "ArtificialRyan"
+  linkedin: "artificial-ryan"
+
+# SEO Tag settings
+seo_tag:
+  image: "/assets/images/site-preview.jpg" # Default image for social sharing
+  twitter:
+    username: "ArtificialRyan"
+  facebook:
+    app_id: ""
+    publisher: ""
+    admins: ""
+
+# Analytics
+google_analytics:
+  id: ""
+
+# Comments
+disqus:
+  shortname: ""
+
+# Excerpt settings
+excerpt_separator: <!--more-->
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
+# Timezone
+timezone: America/New_York
+
+# URL for assets
+assets_url: /assets
