@@ -131,6 +131,10 @@ a:hover {
     align-items: center;
 }
 
+.social-links a {
+    color: #ffffff; /* Sets icon color for inline SVGs */
+}
+
 .social-icon {
     height: 1.75rem; /* Slightly smaller for a cleaner look */
     width: 1.75rem;
