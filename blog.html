@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Coming Soon</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="placeholder-content">
-            <h1>[ Blog Coming Soon ]</h1>
-            <p>The system is thinking...</p>
-            <a href="index.html" class="back-link">Return to Hub</a>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Blog
+---
+
+<div class="post-list">
+  <h2>[ All Posts ]</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
