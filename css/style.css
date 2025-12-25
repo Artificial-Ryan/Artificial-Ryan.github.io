@@ -124,13 +124,23 @@ a:hover {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
+    align-items: center;
 }
 
-.social-links a {
-    font-size: 1.1rem;
+.social-icon {
+    height: 1.75rem; /* Slightly smaller for a cleaner look */
+    width: 1.75rem;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.social-links a:hover .social-icon {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.7));
 }
 
 /* --- Placeholder Page Styles --- */
