@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Artificial-Ryan/Artificial-Ryan.github.io # The path to your GitHub repository
   branch: main # The branch to update
-  auth_type: oauth
-  client_id: Ov23liKqiq8XwThAvh14
+  auth_type: pkce
+  app_id: "Ov23lif8gYDI3vQ0D2w4"
   base_url: https://api.decapcms.org
 
 media_folder: "assets/uploads" # Where media files will be stored
