@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Coming Soon</title>
+    <title>Portfolio - My Code</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +11,45 @@
 </head>
 <body>
     <div class="container">
-        <div class="placeholder-content">
-            <h1>[ Portfolio Coming Soon ]</h1>
-            <p>Rendering project data...</p>
-            <a href="index.html" class="back-link">Return to Hub</a>
-        </div>
+        <h1>My GitHub Projects</h1>
+        <p>A selection of my public repositories on GitHub. This list is updated automatically.</p>
+        <ul id="github-repos" class="repo-list">
+            <li>Loading GitHub projects...</li>
+        </ul>
+        <a href="index.html" class="back-link">Return to Hub</a>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('https://api.github.com/users/Artificial-Ryan/repos')
+            .then(response => response.json())
+            .then(repos => {
+                const repoList = document.getElementById('github-repos');
+                repoList.innerHTML = ''; // Clear the "Loading..." message
+
+                if (repos.length === 0) {
+                    repoList.innerHTML = '<li>No public repositories found.</li>';
+                    return;
+                }
+
+                repos.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+
+                repos.forEach(repo => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <h3><a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${repo.name}</a></h3>
+                        <p>${repo.description || 'No description provided.'}</p>
+                        <p><small>Language: ${repo.language || 'N/A'} | Last updated: ${new Date(repo.pushed_at).toLocaleDateString()}</small></p>
+                    `;
+                    repoList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching GitHub repositories:', error);
+                const repoList = document.getElementById('github-repos');
+                repoList.innerHTML = '<li>Failed to load repositories. Please try again later.</li>';
+            });
+    });
+    </script>
 </body>
 </html>
